@@ -47,7 +47,7 @@ function createHTMLParser () {
       }
     }
   } else {
-    var minidom = require('minidom')
+    var minidom = require('@bmewburn/minidom')
     Parser.prototype.parseFromString = function (string) {
       return minidom(string)
     }
